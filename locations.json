@@ -1,0 +1,54 @@
+{
+    "locationArray" : [
+        {
+            "title":"Romeoville",
+            "cords":{"lat":41.648,"lng":-88.09},
+            "info":"Nothing special, just my home town"
+        },
+        {
+            "title":"Braidwood",
+            "cords":{"lat":41.834,"lng":-88.22},
+            "info":"Nothing super special here either, this is just where I currently live with my Girlfriend"
+        },
+        {
+            "title":"Wonder Lake",
+            "cords":{"lat":42.393,"lng":-88.353},
+            "info":"I would come to Wonder Lake every year for a family reunion, and I just think its so beautiful."
+        },
+        {
+            "title":"Disney world Animal Kingdom",
+            "cords":{"lat":28.357,"lng":-81.59},
+            "info":"The first time I went to Animal Kingdom, it was one of the few times that I felt awe. The nature theme is beautiful, and my first visit I walked into a Macaw show, and it was amazing."
+        },
+        {
+            "title":"Disney Art of Animation",
+            "cords":{"lat":28.35,"lng":-81.549},
+            "info":"I have been to Disney World twice, and have always stayed at the Art of Animation."
+        },
+        {
+            "title":"Cinemark at 7 Bridges",
+            "cords":{"lat":41.768,"lng":-88.07},
+            "info":"Not a luxuary theatre, but this is my go to theatre. 7 Bridges has one of the best imax screens around, its nearby, and it has the best ticket prices"
+        },
+        {
+            "title":"The Forge",
+            "cords":{"lat":41.328,"lng":-88.082},
+            "info":"A small venue that I have seen plenty of great bands at: Cattle Decapitation, Suffocation, Trivium, Ensiferum, and many others"
+        },
+        {
+            "title":"Hollywood Casino Ampitheatre",
+            "cords":{"lat":41.544,"lng":-87.777},
+            "info":"I have seen so many great concerts here: Ozzy Osbourne, Black Sabbath, Iron Maiden, Slipknot, Lamb of God, to name a few"
+        },
+        {
+            "title":"Brookfield Zoo",
+            "cords":{"lat":41.834,"lng":-87.83},
+            "info":"Having one of the largest zoos in America so close by has been wonderful. I specifically set the latlng to a statue of the Walrus Olga, as it is one of my favorite places at the zoo"
+        },
+        {
+            "title":"The Shedd Aquarium",
+            "cords":{"lat":41.868,"lng":-87.614},
+            "info":"I have always loved visiting the Shedd. I have always loved fish, and the Shedd is a great place to see them."
+        }
+    ]
+}

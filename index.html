@@ -1,0 +1,70 @@
+<!--
+Author:  Nathan FIckett
+Class:   Web & Distributed Programming
+Project: Map Mania v2
+Session: su18-cpsc-24700-lt1
+Description: This is the final Version of Map Mania, there is a description for the game seen starting at line 42
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Map Mania V2</title>
+    <meta charset="UTF-8"/>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMXFixx3W6d07-hTxbDzKOGZxrGJODAQM&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./mapManiaV2.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div id = "buttons">
+        <h1>Map Mania V2</h1>
+        <button id ="startGame"  onclick = "placeMarker()">Start Game</button>
+        <button id ="confirmMarker" onclick = "confirmMarker()" disabled>Confirm Marker</button>
+        <button id="scan" onclick = "scanArea()" disabled>Scan</button> 
+        <button onclick = "displayHelp()">Help</button>
+        <button id = "cheat" onclick = "skipLevel()" disabled>Cheat</button>
+      </div> 
+      <div id= "scoreBoard">
+        <input type ="text" id = "score" readonly value = "Score:0"><br>
+        <input type = "text" id = "scans" readonly value = "Scans:10"><br>
+        <input type = "text" id = "scanResults" readonly value = "Scan Results">
+       </div>
+    </div>
+    <!--The following code was added with help of w3c-->
+    <div class="helpPopup" id = "helpPopup">
+      <div class="popupContent">
+        <span class="close" onclick = "hideHelp()">&times;</span>
+        <h1>How To Play</h1>
+        <h2>Basics/Goals</h2>
+        <p>The main objective of the game is to find locations on the map, and place a Marker
+          near the levels location. Locations are found via the "Scan" ability. You will get 10
+          scans per level. When you think you have found the location, you can place your marker
+          where you think the locaiton is, if you are within a small square around the location
+          you will score a point, if not, you will not get a point. To win the game, you have to find
+          at least 5 locations. You can also click on the locations marker for a little fact
+          on why I chose that location.
+        </p>
+        <h2>Scan</h2>
+        <p>The Scan ability is your only way to find locations without random guessing.
+          When you scan, you be notified in the "Scan Results" box if the levels location is
+          within the bounds of the screen. This ability can be used 10 times per location. 
+        </p>
+        <h2>Confirm Marker</h2>
+        <p>This will confirm you level marker in the place it is, if it is close enought to the
+          designated location, you will score a point. 
+        </p>
+        <h1>Cheat</h1>
+        <p>This should NEVER BE USED!!!!!! But if you do you is, it will reveal the levels
+          location and give you a point.
+        </p>
+      </div>
+    </div>
+    <!--end of w3c-->
+    <div id="mapDiv"></div>
+  </body>
+</html>
